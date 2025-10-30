@@ -110,7 +110,7 @@ export function UserSearch({ currentUserId, currentUserRole }: { currentUserId: 
 
   return (
     <div className="space-y-6">
-      <Card className="border-slate-800 bg-slate-900/50 backdrop-blur-xl">
+      <Card className="border-slate-800 bg-white/5 backdrop-blur-xl">
         <CardHeader>
           <CardTitle className="text-slate-100">Szukaj użytkowników</CardTitle>
           <CardDescription className="text-slate-400">
@@ -150,7 +150,7 @@ export function UserSearch({ currentUserId, currentUserRole }: { currentUserId: 
 
       <div className="grid gap-4 md:grid-cols-2">
         {users.map((user) => (
-          <Card key={user.id} className="border-slate-800 bg-slate-900/50 backdrop-blur-xl">
+          <Card key={user.id} className="border-slate-800 bg-white/5 backdrop-blur-xl">
             <CardHeader>
               <div className="flex items-start justify-between">
                 <div>

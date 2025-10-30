@@ -81,7 +81,7 @@ export function NotificationsList({
 
   if (notifications.length === 0) {
     return (
-      <Card className="border-slate-800 bg-slate-900/50 backdrop-blur-xl">
+      <Card className="border-slate-800 bg-white/5 backdrop-blur-xl">
         <CardHeader>
           <CardTitle className="text-slate-100">Brak powiadomień</CardTitle>
         </CardHeader>
@@ -115,7 +115,7 @@ export function NotificationsList({
           <Card
             key={notification.id}
             className={`border-slate-800 backdrop-blur-xl ${
-              notification.is_read ? "bg-slate-900/30" : "bg-slate-900/50 border-blue-900"
+              notification.is_read ? "bg-slate-900/30" : "bg-white/5 border-blue-900"
             }`}
           >
             <CardContent className="p-4">

@@ -81,7 +81,7 @@ export function TasksList({
         const canReview = !isSub && task.status === "submitted"
 
         return (
-          <Card key={task.id} className="border-slate-800 bg-slate-900/50 backdrop-blur-xl">
+          <Card key={task.id} className="border-slate-800 bg-white/5 backdrop-blur-xl">
             <CardHeader>
               <div className="flex items-start justify-between">
                 <div className="flex-1">

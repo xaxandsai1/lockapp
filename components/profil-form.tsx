@@ -69,7 +69,7 @@ export function ProfilForm({ profile }: { profile: Profile }) {
   }
 
   return (
-    <Card className="border-slate-800 bg-slate-900/50 backdrop-blur-xl">
+    <Card className="border-slate-800 bg-white/[0.02] backdrop-blur-xl">
       <CardHeader>
         <CardTitle className="text-2xl text-slate-100">Edytuj profil</CardTitle>
         <CardDescription className="text-slate-400">Zaktualizuj swoje informacje</CardDescription>

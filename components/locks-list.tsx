@@ -76,7 +76,7 @@ const LockCard = memo(function LockCard({
   }
 
   return (
-    <Card className="border-slate-800 bg-slate-900/50 backdrop-blur-xl">
+    <Card className="border-slate-800 bg-white/5 backdrop-blur-xl">
       <CardHeader>
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1 min-w-0">
@@ -321,7 +321,7 @@ export function LocksList({
 
   if (locks.length === 0) {
     return (
-      <Card className="border-slate-800 bg-slate-900/50 backdrop-blur-xl">
+      <Card className="border-slate-800 bg-white/5 backdrop-blur-xl">
         <CardHeader>
           <CardTitle className="text-slate-100">Brak locków</CardTitle>
           <CardDescription className="text-slate-400">

@@ -207,7 +207,7 @@ export function RelationshipsList({
   return (
     <div className="grid gap-4 md:grid-cols-2">
       {relationships.map((rel) => (
-        <Card key={rel.id} className="border-slate-800 bg-slate-900/50 backdrop-blur-xl">
+        <Card key={rel.id} className="border-slate-800 bg-white/5 backdrop-blur-xl">
           <CardHeader>
             <div className="flex items-start justify-between">
               <div>

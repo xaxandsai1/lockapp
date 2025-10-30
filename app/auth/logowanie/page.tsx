@@ -1,8 +1,7 @@
 "use client"
 
 import type React from "react"
-import { PublicNavigation } from "@/components/public-navigation"
-
+ 
 import { createClient } from "@/lib/supabase/client"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -41,7 +40,7 @@ export default function LogowaniePage() {
 
   return (
     <>
-      <PublicNavigation />
+       
       <div className="flex min-h-svh w-full items-center justify-center p-4 pb-24 md:pb-10 md:pt-20 bg-white/[0.02]">
         <div className="w-full max-w-sm">
           <Card className="border-white/5 bg-white/[0.02]/50 backdrop-blur-xl">
