@@ -199,22 +199,31 @@ export default async function RelacjePage() {
         </div>
       ) : (
         /* === Wspólny bazowy widok zakładek (KEYHOLDER oraz SUB bez aktywnej relacji) === */
-        <Tabs defaultValue="active" className="w-full">
-          <TabsList className="grid w-full grid-cols-5 bg-white/[0.02] border border-white/5">
-            <TabsTrigger value="search" className="data-[state=active]:bg-white/[0.02]/60">Szukaj</TabsTrigger>
-            <TabsTrigger value="pending" className="data-[state=active]:bg-white/[0.02]/60">
-              Oczekujące ({pendingRelationships.length})
-            </TabsTrigger>
-            <TabsTrigger value="active" className="data-[state=active]:bg-white/[0.02]/60">
-              Aktywne ({activeRelationships.length})
-            </TabsTrigger>
-            <TabsTrigger value="paused" className="data-[state=active]:bg-white/[0.02]/60">
-              Wstrzymane ({pausedRelationships.length})
-            </TabsTrigger>
-            <TabsTrigger value="ended" className="data-[state=active]:bg-white/[0.02]/60">
-              Zakończone ({endedRelationships.length})
-            </TabsTrigger>
-          </TabsList>
+<Tabs defaultValue="active" className="w-full">
+  <TabsList className="
+    grid w-full 
+    grid-cols-1 gap-2
+    sm:grid-cols-2 
+    md:grid-cols-3 
+    lg:grid-cols-5 
+    bg-white/[0.02] border border-white/5
+  ">
+    <TabsTrigger value="search" className="data-[state=active]:bg-white/[0.02]/60 w-full">
+      Szukaj
+    </TabsTrigger>
+    <TabsTrigger value="pending" className="data-[state=active]:bg-white/[0.02]/60 w-full">
+      Oczekujące ({pendingRelationships.length})
+    </TabsTrigger>
+    <TabsTrigger value="active" className="data-[state=active]:bg-white/[0.02]/60 w-full">
+      Aktywne ({activeRelationships.length})
+    </TabsTrigger>
+    <TabsTrigger value="paused" className="data-[state=active]:bg-white/[0.02]/60 w-full">
+      Wstrzymane ({pausedRelationships.length})
+    </TabsTrigger>
+    <TabsTrigger value="ended" className="data-[state=active]:bg-white/[0.02]/60 w-full">
+      Zakończone ({endedRelationships.length})
+    </TabsTrigger>
+  </TabsList>
 
           <TabsContent value="search" className="mt-6">
             <UserSearch currentUserId={user.id} currentUserRole={profile.role} />
